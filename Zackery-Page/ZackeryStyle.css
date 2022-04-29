@@ -380,6 +380,8 @@ nav { display: none; }
     transition: 
     transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
+    width: 350px; 
+    height: 250px;
 }
 
 .portfolio__item:focus {
