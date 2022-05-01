@@ -317,6 +317,7 @@ nav { display: none; }
     }
 }
 
+/*About me */
 .about-me {
     max-width: 1000px!important;
     margin: 0 auto!important;
@@ -374,6 +375,7 @@ nav { display: none; }
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    width: 350px;
 }
 
 .portfolio__img {
@@ -486,14 +488,7 @@ html {
 .center {
     text-align: center;
 }
-.sneak-about {
-    background-color: var(--clr-dark)!important;
-    background-image: url(Sneak-About.png)!important;
-    background-size: cover!important;
-    background-blend-mode: multiply!important;
-    color: var(--clr-light)!important;
-    text-align: center!important;
-}
+
 
 
 

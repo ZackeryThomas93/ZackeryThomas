@@ -34,7 +34,7 @@
 }
 
 body {
-    background: linear-gradient(270deg, #cc2626, #000000, #0000005e);
+    background: linear-gradient(270deg, #000000, #000000, #000000);
     background-size: 600% 600%;
     color: var(--clr-dark);
     margin: 0;
@@ -77,7 +77,7 @@ body {
 {
     width: 100%;
     height: auto;
-    background-color: #000000;
+    background-color: var(--clr-dark);
     line-height: 60px;
     padding: 0px 100px;
            
@@ -369,6 +369,7 @@ html {
 .about-me {
     max-width: 1000px!important;
     margin: 0 auto!important;
+    color: var(--clr-light)!important;
 }
 
 .about-me__img {
@@ -387,6 +388,7 @@ html {
     }
 
     .section__title--about {
+        color: var(--clr-accent)!important;
         grid-area: title;
     }
 
@@ -411,7 +413,7 @@ html {
 
 .my-work {
     background-color: var(--clr-dark);
-    color: var(--clr-light);
+    color: var(--clr-accent);
     text-align: center;
 }
 
@@ -423,6 +425,7 @@ html {
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    width: 350px;
 }
 
 .portfolio__img {
