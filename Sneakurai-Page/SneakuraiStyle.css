@@ -13,7 +13,7 @@
 
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #3bbb9a;
+    --clr-accent: #cc2626;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -33,6 +33,38 @@
     }
 }
 
+body {
+    background: linear-gradient(270deg, #cc2626, #000000, #0000005e);
+    background-size: 600% 600%;
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+
+    
+}
+
+
 /* Navigation */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
 *{
@@ -45,7 +77,7 @@
 {
     width: 100%;
     height: auto;
-    background-color: #3bbb9a;
+    background-color: #000000;
     line-height: 60px;
     padding: 0px 100px;
            
@@ -94,7 +126,7 @@ nav .navbar-nav li
    
 .nav-link
 {
-    color: #3b3ebb!important;
+    color: #cc2626!important;
     text-decoration: none;
     font-size:  18px;
     text-transform: uppercase;
@@ -109,39 +141,7 @@ nav .navbar-nav li a:hover
 
 nav ul li .active
 {
-    color: #3b3ebb;
-}
-
-
-body {
-    background: linear-gradient(270deg, #3bbb9a, #3b3ebb, #3ba9bb);
-    background-size: 600% 600%;
-    color: var(--clr-dark);
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
-
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
-}
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-
-    
+    color: #cc2626;
 }
 
 section{
@@ -269,11 +269,60 @@ nav { display: none; }
     }
 }
 
-/* My services section */
+.center {
+    text-align: center;
+}
 
-.my-services {
+/* Animation */
+html {
+	height: 100%;
+    margin: 0;
+	padding: 0;
+	
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.containercircle {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.animation {
+	width: 250px;
+	height: 250px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+    
+}
+
+
+/* About this Game */
+.sneak-about {
     background-color: var(--clr-dark)!important;
-    background-image: url(https://images5.alphacoders.com/105/1056773.jpg)!important;
+    background-image: url(Sneak-About.png)!important;
     background-size: cover!important;
     background-blend-mode: multiply!important;
     color: var(--clr-light)!important;
@@ -316,7 +365,7 @@ nav { display: none; }
         margin-left: 2em!important;
     }
 }
-
+/*About me */
 .about-me {
     max-width: 1000px!important;
     margin: 0 auto!important;
@@ -437,65 +486,3 @@ nav { display: none; }
 .social-list__link {
     padding: .5em;
 }
-
-/* Animation */
-html {
-	height: 100%;
-    margin: 0;
-	padding: 0;
-	
-}
-
-@keyframes float {
-	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-}
-
-.containercircle {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.animation {
-	width: 250px;
-	height: 250px;
-	box-sizing: border-box;
-	border: 5px white solid;
-	border-radius: 50%;
-	overflow: hidden;
-	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-	transform: translatey(0px);
-	animation: float 6s ease-in-out infinite;
-    
-}
-
-.center {
-    text-align: center;
-}
-.sneak-about {
-    background-color: var(--clr-dark)!important;
-    background-image: url(Sneak-About.png)!important;
-    background-size: cover!important;
-    background-blend-mode: multiply!important;
-    color: var(--clr-light)!important;
-    text-align: center!important;
-}
-
-
-
- 
-    
